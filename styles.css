@@ -1,0 +1,187 @@
+/* Default background and font style for the body */
+body {
+	background-color: rgba(128, 255, 255, 0.2);
+	font-family: Verdana, Arial, sans-serif; /* I really like Verdana. */
+}
+
+/* Make sure each column of each table has padding. */
+td {
+	padding: 10px;
+}
+
+/* Zebra Icon */
+.lefticon {
+	max-height: 100%;
+	width: auto;
+	float: left;
+	padding-left: 5%;
+}
+
+/* Header for title information */
+.header {
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+	background-color: rgb(0, 150, 150);
+	background-image: url(zebra2.png), url(zebra.png), url(circuit.jpg);
+	background-position: 2%, 98%, right;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: auto 80%, auto 80%, cover;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 160px;
+	z-index: 3;
+}
+
+/* Increase the boldness of the title text */
+.header h1 {
+	text-shadow: 3px 3px 5px black;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 4em;
+}
+
+/* Navbar for navigating different pages within the site */
+.navbar {
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	width: 100%;
+	position: fixed;
+	top: 220px;
+	left: 0px;
+	z-index: 3;
+}
+
+/* Style for individual links */
+.navbar a {
+	text-align: center;
+	color: white;
+	padding: 14px 4vw;
+}
+
+/* Highlight a link when hovered over */
+.navbar a:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 130, 130);
+}
+
+/* The main content, divided into columns */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 255px;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	z-index: 1;
+}
+
+/* The sidebar */
+.side {
+	flex: 20%;
+	background-color: rgb(0, 0, 128);
+	color: white;
+}
+
+/* Change the link color in the sidebar, given its darker color. */
+.side a {
+	color: #00FFFF;
+}
+
+/* Alter the properties of the headers in the sidebar. */
+.subtitle {
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+.subtext {
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+/* The main content */
+.main {
+	flex: 80%;
+	padding-bottom: 70px;
+}
+
+/* Make h3 stand out within main */
+.main h3 {
+	font-variant: small-caps;
+}
+
+/* Text in the row container */
+.text {
+	margin-left: 10px;
+}
+
+/* Footer */
+.footer {
+	padding: 1px;
+	text-align: center;
+	font-size: 0.8em;
+	background-color: rgb(210, 210, 210);
+	z-index: 2;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+/* linkImage is the image that links to different social platforms */
+.linkImage {
+	background-color:white; 
+	width:60%; 
+	height:auto; 
+	box-shadow: 5px 5px 10px 10px rgba(255,255,255,0.2); 
+	border: 1px solid #000000;
+}
+
+/* Setting up the resume table */
+.resume {
+	border: 1px solid black;
+	background-color: white;
+	margin-left: 10px;
+}
+
+
+/* Adapt the layout at a screen width of 900 pixels */
+@media (max-width: 900px) {
+	.row {
+		flex-direction: column;
+		font-size: 0.8em;
+		margin-top: 170px;
+	}
+	
+	.navbar {
+		font-size: 0.8em;
+		top: 140px;
+	}
+	
+	.navbar a {
+		padding: 14px 2vw;
+	}
+	
+	.linkImage {
+		background-color:white; 
+		width:20%; 
+		height:auto; 
+		box-shadow: 5px 5px 10px 10px rgba(255,255,255,0.2); 
+		border: 1px solid #000000;
+	}
+	
+	.header {
+		height: 80px;
+		background-position: 2%, 98%, center;
+		background-size: auto 80%, auto 80%, cover;
+	}
+	
+	.header h1 {
+		text-shadow: 3px 3px 5px black;
+		font-weight: bold;
+		font-variant: small-caps;
+		font-size: 2em;
+	}
+}
