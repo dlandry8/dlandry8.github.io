@@ -9,6 +9,13 @@ td {
 	padding: 10px;
 }
 
+/* Increase the size of buttons. */
+button {
+	font-size: 1.5em;
+	font-variant: small-caps;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
 /* Zebra Icon */
 .lefticon {
 	max-height: 100%;
@@ -84,6 +91,7 @@ td {
 	flex: 20%;
 	background-color: rgb(0, 0, 128);
 	color: white;
+	padding-bottom: 60px;
 }
 
 /* Change the link color in the sidebar, given its darker color. */
@@ -147,6 +155,46 @@ td {
 }
 
 
+.cvHeader {
+	line-height: 2;
+	font-size: 1.2em;
+}
+
+.cvSectionTitle {
+	margin-left: 10px;
+	margin-bottom: 0px;
+	font-size: 1.6em;
+	color: #004090;
+}
+
+.cvTable {
+	margin-left: 10px;
+}
+
+.cvText {
+	margin-left: 10px;
+	font-size: 1.2em;
+	line-height: 1.3;
+}
+
+.cvImage {
+	border-radius:100%;
+	width:50%; 
+	height:50%
+}
+
+.cvLeftColumn {
+	width:30%; 
+	vertical-align:top; 
+	text-align:center; 
+	padding-top:50px;
+}
+
+.cvRightColumn {
+	width: 70%
+}
+
+
 /* Adapt the layout at a screen width of 900 pixels */
 @media (max-width: 900px) {
 	.row {
@@ -183,5 +231,17 @@ td {
 		font-weight: bold;
 		font-variant: small-caps;
 		font-size: 2em;
+	}
+	
+	.cvImage {
+		display: none;
+	}
+	
+	.cvLeftColumn {
+		width: 0%;
+	}
+	
+	.cvRightColumn {
+		width: 100%;
 	}
 }

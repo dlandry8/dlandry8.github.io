@@ -34,6 +34,8 @@
 	<br>
 	<h1 style="font-variant:small-caps; font-size:2em; text-shadow:3px 3px 5px black;">David Landry's Resume</h1>
 	<p>
+	<button onclick="showResume()">Display Resume</button>
+	<button onclick="showCV()">Display Curriculum Vitae</button><br><hr>
 	<a href="Landry Resume August 2020.docx" target="_blank">Click here to download the resume.</a><br><br>
 	<a href="Landry CV August 2020.pdf" target="_blank">Click here to download the CV.</a>
 	<br><br>
@@ -43,8 +45,11 @@
 	</div>
 	
 	<!-- Main section -->
-	<!-- Resume header -->
+	
 	<div class="main">
+	<!-- Begin resume -->
+	<span id="myResume" style="display:block">
+	<!-- Resume header -->
 	<h2 class="text" style="font-variant:small-caps; font-size:2.5em"><center>David Landry</center></h2>
 	<p class="text">
 	<center>
@@ -232,7 +237,424 @@
 	</li></ul>
 	</td></tr>
 	</table></p>
+	</span>
+	<!-- This concludes the resume. -->
 	
+	
+	
+	<!-- Begin the CV. -->
+	<span id="myCV" style="display:none">
+	<!-- Resume header -->
+	<table class="cvTable" style="width:100%">
+	<tr>
+	<td class="cvLeftColumn">
+	<img src="meBW.jpg" class="cvImage">
+	</td>
+	<td class="cvRightColumn">
+	<h2 class="text" style="font-size:2.5em; color:#004090">
+	David Landry
+	</h2>
+	<p class="text cvHeader"><b>
+	Nationality: 
+	</b>
+	American
+	<br><b>
+	Date of birth: 
+	</b>
+	21/08/1979
+	<br><b>
+	Gender: 
+	</b>
+	Male
+	<br><b>
+	Email address: 
+	</b>
+	dlandry@gmx.us
+	<br><b>
+	Email address: 
+	</b>
+	dlandry8@uw.edu
+	<br><b>
+	Website: 
+	</b>
+	<a href="https://www.github.com/dlandry8" target="_blank">https://www.github.com/dlandry8</a>
+	<br><b>
+	Website: 
+	</b>
+	<a href="https://dlandry8.github.io" target="_blank">https://dlandry8.github.io</a>
+	<br><b>
+	LinkedIn: 
+	</b>
+	<a href="https://www.linkedin.com/in/dlandry8" target="_blank">https://www.linkedin.com/in/dlandry8</a>
+	<br><b>
+	</td>
+	</tr>
+	</table></p>
+	
+	<!-- About me -->
+	<h3 class="cvSectionTitle">
+	About Me
+	</h3><hr class="text" style="margin-top:0px">
+	<p class="cvText">
+	I am a very recent university graduate, having earned a bachelor of science in computer engineering. I have over
+    5 years of classroom and lab project experience developing projects in C and C++ and 2 years of class project
+    experience developing, testing, and debugging embedded systems. I also have nearly 20 years of customer
+    service experience, particularly in food service as a Starbucks barista.
+    </p>
+	
+	<!-- Digital Skills -->
+	<h3 class="cvSectionTitle">
+	Digital Skills
+	</h3><hr class="text" style="margin-top:0px">
+	<p class="cvText">
+	Programming Languages- Proficient
+	<br><b>
+	C
+	</b>
+	 | 
+	<b>
+	Verilog
+	</b>
+	 | 
+	<b>
+	C++
+	</b>
+	 | 
+	<b>
+	MatLab
+	</b>
+	 | 
+	<b>
+	Java
+	</b>
+	 | 
+	<b>
+	Embedded C
+	</b><br><br>
+    Programming Languages- Currently learning
+	<br><b>
+	Python
+	</b>
+	 | 
+	<b>
+	HTML
+	</b>
+	 | 
+	<b>
+	CSS
+	</b>
+	 | 
+	<b>
+	JavaScript
+	</b><br><br>
+	Software Tools
+	<br><b>
+    Git
+    </b>
+     | 
+	<b>
+	Linux
+	</b>
+	 | 
+	<b>
+	Modelsim
+	</b>
+	 | 
+	<b>
+	Intel Quartus Prime
+	</b>
+	 | 
+	<b>
+	Atmel Studio
+	</b>
+	 | 
+	<b>
+	LTSpice
+	</b>
+	 | 
+	<b>
+	IDE Arduino
+	</b>
+     | 
+	<b>
+	Microsoft Office
+	</b><br><br>
+	Hardware Tools
+	<br><b>
+	Oscilloscopes
+	</b>
+	 | 
+	<b>
+	Function Generator
+	</b>
+	 |
+	<b>
+	Logic Analyzers
+	</b>
+	 | 
+	<b>
+	Logic Probe
+	</b><br><br>
+	Other Technical Skills
+	<br><b>
+	Serial Communication
+	</b>
+	 | 
+	<b>
+	Embedded Programming
+	</b>
+	 | 
+	<b>
+	Digital Circuits
+	</b>
+	 | 
+	<b>
+	Debugging
+	</b>
+	 | 
+	<b>
+	Microcontroller Bare Metal Programming
+	</b>
+	 | 
+	<b>
+	Test Planning
+	</b>
+	 | 
+	<b>
+	FPGA
+	</b>
+	 | 
+	<b>
+	Embedded System Design
+	</b></p>
+	
+	<!-- Communication and interpersonal skills -->
+	<h3 class="cvSectionTitle">
+	Communication and Interpersonal Skills
+	</h3><hr class="text" style="margin-top:0px">
+	<p class="cvText"><b>
+	Teamwork
+	</b><ul style="list-style-type:circle;"><li>
+	I have nearly 20 years of retail experience where I worked in various teams to deliver excellent customer service.
+	</li><li>
+	I have worked on several group projects in the university with students of many different backgrounds and nationalities.
+	</li></ul></p><p class="cvText"><b>
+	Customer Service
+	</b><ul style="list-style-type:circle;"><li>
+	Throughout my work experience, I have consistently delivered excellent customer service.
+	</li><li>
+	Whether through serving good quality coffee or assisting customers with purchases, I have years of proven experience making guests feel welcome and comfortable.
+	</li></ul></p><p class="cvText"><b>
+	Technical Communication
+	</b><br>
+	As the project manager for my university's capstone project, I acted as the spokesman for the team to our industry representative. This required me to communicate team progress and technical details in an understandable way.
+	<ul style="list-style-type:circle;"><li>
+	Communicated using professional language to communicate technical details
+	</li><li>
+	Used illustrations to better explain details, including engineering schematics and flow charts
+	</li><li>
+	Designed PowerPoint presentations with my team to more easily communicate project information
+	</li><li>
+	Oversaw the documentation of our team's work
+	</li><li>
+	Created Gantt charts to track team progress and milestones
+	</li></ul></p>
+	
+	<!-- Education and Training -->
+	<h3 class="cvSectionTitle">
+	Education and Training
+	</h3><hr class="text" style="margin-top:0px">
+	<p class="cvText">
+	<span style="color: #004090; font-size: 1.3em">
+	Bachelor of Science, Computer Engineering
+	</span><br><b><i>
+	University of Washington- Bothell
+	</b></i>
+	[18/09/2017 - 09/12/2019]
+	<br><b>
+	Address:
+	</b>
+	18115 Campus Way NE Box 358500, 98011-8246 Bothell (United States)
+	<br>
+	<a href="https://www.uwb.edu" target="_blank">https://www.uwb.edu</a>
+	<br><b>
+	Field of Study:
+	</b>
+	Computer Engineering
+	<br><b>
+	Final Grade:
+	</b>
+	3.47
+	<br><ul style="list-style-type:circle;"><li>
+	Technical writing and communication
+	</li><li>
+    Data structures and algorithms using the C++ programming language
+	</li><li>
+    Software engineering, covering design principles, software development lifecycles (including agile paradigms), and version control (including git)
+	</li><li>
+    Analog and digital circuit analysis, including analysis tools such as oscilloscopes, function generators, and logic analyzers
+	</li><li>
+    Computer hardware architecture
+	</li><li>
+    Microprocessor systems
+	</li><li>
+    68k and Z80 assembly languages
+	</li><li>
+    Embedded/electronic system design, testing, and debugging
+	</li><li>
+    Operating system principles
+	</li><li>
+    Digital & FPGA design using Verilog
+	</li></ul></p>
+	<p class="cvText">
+	<span style="color: #004090; font-size: 1.3em">
+	Certificate of Completion: Windows C/C++ Specialist
+	</span><br><b><i>
+	Edmonds Community College
+	</b></i>
+	[13/04/2015 - 10/06/2017]
+	<br><b>
+	Address:
+	</b>
+	20000 68th Ave. W, 98036 Lynnwood (United States)
+	<br>
+	<a href="https://www.edcc.edu" target="_blank">https://www.edcc.edu</a>
+	<br><b>
+	Field of Study:
+	</b>
+	Computer Science
+	<br><b>
+	Final Grade:
+	</b>
+	3.6
+	<br><ul style="list-style-type:circle;"><li>
+	C & C++ Programming, including object-oriented principles, data structures, and algorithms
+	</li><li>
+    Introductory C# programming
+	</li><li>
+    Introductory web programming using ASP.net
+	</li></ul></p>
+	
+	
+	<!-- Projects -->
+	<h3 class="cvSectionTitle">
+	Projects
+	</h3><hr class="text" style="margin-top:0px">
+	
+	<p class="cvText"><b>
+	Alarm Clock
+	</b><br>
+	[ 01/08/2020 – Current ]
+	<br><ul style="list-style-type:circle;"><li>
+	Designing & building a digital alarm clock powered by an ATMEGA 4809 Microcontroller
+	</li><li>
+    Created a timing circuit using 555 timer ICs tuned with an RC circuit to deliver a pulse to the microcontroller once every 1.000 seconds, +/- 0.001
+	</li><li>
+    Assembled a button array for input, each attached to a GPIO of the microcontroller and serviced by a debouncing module included in the uC's code
+	</li><li>
+    Wrote a circuit schematic and a PCB layout for the clock's circuit board
+    </li></ul></p>
+	<p class="cvText">
+	<a href="https://www.github.com/dlandry8/alarmClock" target="_blank">https://www.github.com/dlandry8/alarmClock</a>
+	</p><br>
+	
+	<p class="cvText"><b>
+	Landarian Labs
+	</b><br>
+	[ 01/08/2020 – Current ]
+	<br>
+	I am currently designing a personal website that gives biographical information and highlights my development skills. The site is hosted on GitHub.
+	<br><ul style="list-style-type:circle;"><li>
+	Wrote the webpages in html without the use of templates or development tools. Just notepad++.
+	</li><li>
+    Designed the layout of the webpages using CSS.
+	</li><li>
+    Implemented scripting, particularly in the interactive section, using JavaScript.
+	</li><li>
+    Future features will include database access using PHP.
+    </li></ul></p>
+	<p class="cvText">
+	<a href="https://www.github.com/dlandry8/dlandry8.github.io" target="_blank">https://www.github.com/dlandry8/dlandry8.github.io</a><br>
+	<a href="https://dlandry8.github.io" target="_blank">https://dlandry8.github.io</a><br>
+	</p><br>
+	
+	<p class="cvText"><b>
+	Make Song
+	</b><br>
+	[ 01/10/2019 – 20/10/2019 ]
+	<br>
+	Created a program in MatLab with a lab partner that plays a digitally synthesized song.
+	<br><br>
+    <a href="https://www.github.com/dlandry8/matlab_make_song" target="_blank">https://www.github.com/dlandry8/matlab_make_song</a><br>
+	</p><br>
+
+	<p class="cvText"><b>
+	ROM Emulator
+	</b><br>
+	[ 04/01/2019 – 30/07/2019 ]
+	<br><ul style="list-style-type:circle;"><li>
+	Led a team of 4 students to design and build a ROM emulator, a hardware tool that interfaced with a target system under test. 
+	The emulator would act as the ROM for an embedded board under test. A user could load instructions into the emulator, which would then be read by the target system.
+	</li><li>
+    Built the circuit board & designed the layout of the hardware components using Express Schematic & PCB
+	</li><li>
+    Designed a PC interface application called Romulator in C# using Windows serial APIs. 
+	Romulator would allow users to load a memory file (either a Motorola S-Record or an Intel Hex file) 
+	and it would parse the file to send data to indicated memory addresses within the ROM emulator's onboard memory. 
+	Romulator would also allow the user to turn the emulator into emulation mode, where its memory content could be read by the target system under test.
+	</li><li>
+    Communicated with our industry and faculty representatives as the team’s spokesman
+	</li><li>
+	Managed our group’s schedule and milestones via Gantt charts
+	</li><li>
+	Wrote detailed test plans with the team members
+	</li><li>
+	Performed debugging on both the hardware and software levels
+    </li></ul></p>
+	<p class="cvText">
+	<a href="https://www.github.com/dlandry8/romulator" target="_blank">https://www.github.com/dlandry8/romulator</a>
+	</p><br>
+	
+	<p class="cvText"><b>
+	Shakey, the Self-Balancing Robot
+	</b><br>
+	[ 24/02/2019 – 14/03/2019 ]
+	<br><ul style="list-style-type:circle;"><li>
+    Designed a self-balancing robot consisting of 3 platforms attached to a pair of wheels in a team of 4
+	</li><li>
+    Programmed an Arduino Uno and a motor drive using the Arduino IDE to control the robot
+	</li><li>
+	Used sensor data to move the wheels forward or backward, keeping the robot upright
+    </li></ul></p>
+	<p class="cvText">
+	<a href="https://www.github.com/dlandry8/shakey" target="_blank">https://www.github.com/dlandry8/shakey</a>
+	</p><br>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	</span>
+	<!-- This concludes the CV. -->
 	</div>
 	
 	<!-- Footer -->
