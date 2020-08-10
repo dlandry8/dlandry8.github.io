@@ -7,7 +7,9 @@
 <meta charset="UTF-8">
 <!-- Establish external data -->
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="images.css">
 <script src="script.js"></script>
+
 <!-- Other head properties -->
 <title>About David Landry</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,10 +52,32 @@
 	<p class="text">Here are some interesting facts about David. Do you have any questions to contribute? Contact David to have your question answered!</p>
 	<span class="bio">
 	<table>
-	
 	<tr>
-	<td rowspan="3000">
-	<img class="bioImage" src="easthampton.jpg" alt="Welcome sign for Easthampton, MA">
+	<td rowspan="2000">
+	<!-- Easthampton -->
+    <img class="bioImage" src="easthampton.jpg" alt="Welcome sign for Easthampton, MA." onclick="createModal(this.src, this.alt)"><br>
+
+    <!-- Tree -->
+	<img class="bioImage" src="tree.jpg" alt="Around my neighborhood" onclick="createModal(this.src, this.alt)"><br>
+	<img class="bioImage" src="uwb.jpg" alt="At the University of Washington, Bothell" onclick="createModal(this.src, this.alt)"><br>
+	<img class="bioImage" src="generations.jpg" alt="Four generations" onclick="createModal(this.src, this.alt)"><br>
+	<img class="bioImage" src="mom.jpg" alt="Mom" onclick="createModal(this.src, this.alt)"><br>
+	<img class="bioImage" src="dad.jpg" alt="Dad" onclick="createModal(this.src, this.alt)"><br>
+    <img class="bioImage" src="tet.jpg" alt="Lunar New Year with friends" onclick="createModal(this.src, this.alt)"><br>
+	
+	<!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+	
 	</td>
 	<td style="text-align:right"><b>
 	Name:
@@ -67,7 +91,6 @@
 	</b></td><td>
 	Easthampton, MA
 	</td></tr>
-
 	<tr>
 	<td style="text-align:right"><b>
 	Current Residence:
@@ -81,10 +104,17 @@
 	</b></td><td>
 	I have a wide, eclectic taste in music. I enjoy classical music, especially J.S. Bach. I also enjoy pop rock music from the 70's and 80's, with some of my favorites 
 	including Elton John, Billy Joel, Phil Collins, Genesis, America, and the Doobie Brothers. Lately, I've been getting into some forms of metal music with some 
-	favorites being Fozzy, Eluveitie, Wind Rose, and Apocalypse Orchestra. I also enjoy some folk music (Patty Gurdy is one of my new favorites!) and some Christian 
-	gospel music too.
+	favorites being Fozzy, Eluveitie, Wind Rose, Antti Martikainen, and Apocalypse Orchestra. I also enjoy some folk music (Patty Gurdy and Lindsey Stirling are two of my new favorites!) 
+	and some Christian gospel music too, with Robin Mark being a favorite.
 	</td></tr>
-
+	
+	<tr>
+	<td style="text-align:right"><b>
+	Favorite food:
+    </b></td><td>
+	I enjoy experiencing other cultures through food! I don't necessarily have a favorite, but I enjoy exploring new foods from other cultures. Lately, I've been enjoying exploring 
+	Asian cuisine. My favorite go-to junk foods include pizza and cookies. When cooking, I like to prepare stews and casseroles.
+    </td></tr>
 
 	</table>
 	</span>
@@ -92,10 +122,11 @@
 	
 	
 	<!-- Footer -->
-	<div class="footer">
-	<p>Copyright 2020, Landarian Labs. All rights reserved.</p>
+	<div id="footer">
+	<p><center>Copyright 2020, Landarian Labs. All rights reserved.</center></p>
 	</div>
 </div>
 
 </body>
+<script src="images.js"></script>
 </html>
