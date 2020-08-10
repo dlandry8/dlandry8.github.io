@@ -145,6 +145,7 @@ button {
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
+	display: block;
 }
 
 /* linkImage is the image that links to different social platforms */
