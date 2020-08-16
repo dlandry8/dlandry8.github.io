@@ -134,6 +134,12 @@ button {
 	margin-left: 10px;
 }
 
+.text img {
+	width: 100%;
+	max-width: 450px;
+	height: auto;
+}
+
 /* Footer */
 #footer {
 	padding: 1px;
