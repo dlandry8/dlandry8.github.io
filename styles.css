@@ -140,6 +140,11 @@ button {
 	padding-top: 10px;
 	padding-right: 10px;
 	width: 25%;
+}
+
+.text img {
+	width: 100%;
+	max-width: 450px;
 	height: auto;
 }
 
