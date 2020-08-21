@@ -134,6 +134,15 @@ button {
 	margin-left: 10px;
 }
 
+/* Index image */
+#pilchuck {
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	width: 25%;
+	height: auto;
+}
+
 /* Footer */
 #footer {
 	padding: 1px;
