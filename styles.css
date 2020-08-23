@@ -229,7 +229,7 @@ button {
 
 
 /* Adapt the layout at a screen width of 900 pixels */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 	.row {
 		flex-direction: column;
 		font-size: 0.8em;

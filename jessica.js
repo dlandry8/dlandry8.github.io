@@ -1,7 +1,11 @@
 var encouragement = document.getElementById("currentEncouragement");
 
 function changeSource(docID) {
-	var targetLink = '<iframe width="560" height="315" ';
+	var targetLink = '<iframe ';
+	if (window.outerWidth > 600)
+		targetLink += 'width="560" height="315" ';
+	else
+		targetLink += 'width="304" height="171" ';
     if (docID == "Aug142020") {
 	    targetLink += 'src="https://www.youtube.com/embed/hfH806X-0y4"';
 	}
@@ -17,6 +21,6 @@ function changeSource(docID) {
 	else {
 	    targetLink += 'src="https://www.youtube.com/embed/NMre6IAAAiU"';
 	}
-	targetLink += ' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+	targetLink += ' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 	currentEncouragement.innerHTML = targetLink;
 }
