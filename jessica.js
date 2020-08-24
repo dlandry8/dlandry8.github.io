@@ -6,7 +6,10 @@ function changeSource(docID) {
 		targetLink += 'width="560" height="315" ';
 	else
 		targetLink += 'width="304" height="171" ';
-    if (docID == "Aug142020") {
+    if (docID == "Aug232020") {
+		targetLink += 'src="https://www.youtube.com/embed/jtHinLo98XI"';
+	}
+	else if (docID == "Aug142020") {
 	    targetLink += 'src="https://www.youtube.com/embed/hfH806X-0y4"';
 	}
     else if (docID == "Aug112020") {
