@@ -18,16 +18,8 @@ button {
 	border-color: black;
 }
 
-/* Zebra Icon */
-.lefticon {
-	max-height: 100%;
-	width: auto;
-	float: left;
-	padding-left: 5%;
-}
-
 /* Header for title information */
-.header {
+#header {
 	padding: 30px 0px 30px 0px;
 	text-align: center;
 	background-color: rgb(0, 150, 150);
@@ -45,15 +37,15 @@ button {
 }
 
 /* Increase the boldness of the title text */
-.header h1 {
+#header h1 {
 	text-shadow: 3px 3px 5px black;
 	font-weight: bold;
 	font-variant: small-caps;
-	font-size: 4em;
+	font-size: 3vw;
 }
 
 /* Navbar for navigating different pages within the site */
-.navbar {
+#navbar {
 	display: flex;
 	background-color: black;
 	justify-content: center;
@@ -65,20 +57,20 @@ button {
 }
 
 /* Style for individual links */
-.navbar a {
+#navbar a {
 	text-align: center;
 	color: white;
 	padding: 14px 4vw;
 }
 
 /* Highlight a link when hovered over */
-.navbar a:hover {
+#navbar a:hover {
 	background-color: rgb(255, 255, 255);
 	color: rgb(0, 130, 130);
 }
 
 /* The main content, divided into columns */
-.row {
+#row {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 255px;
@@ -88,8 +80,13 @@ button {
 	z-index: 1;
 }
 
+/* Add small margins to the elements in each row container. */
+#row h1, h3, p {
+	margin-left: 10px;
+}
+
 /* The sidebar */
-.side {
+#side {
 	flex: 20%;
 	background-color: rgb(0, 0, 128);
 	color: white;
@@ -98,40 +95,38 @@ button {
 }
 
 /* Change the link color in the sidebar, given its darker color. */
-.side a {
+#side a {
 	color: #00FFFF;
+	margin-left: 0px;
 }
 
-.side h3 {
+#side h3 {
 	font-variant:small-caps; 
 	font-size:1.5em; 
 	text-shadow:3px 3px 5px black;
+	margin-left: 10px;
+	margin-bottom: 0px;
 }
 
-/* Alter the properties of the headers in the sidebar. */
-.subtitle {
-	margin-bottom: 0px;
+#side p {
+	font-size: 1.2em;
 	margin-left: 10px;
-}
-.subtext {
 	margin-top: 0px;
-	margin-left: 10px;
 }
 
 /* The main content */
-.main {
+#main {
 	flex: 80%;
 	padding-bottom: 70px;
 }
 
-/* Make h3 stand out within main */
-.main h3 {
-	font-variant: small-caps;
+#main h2, h3, p {
+	margin-left: 10px;
 }
 
-/* Text in the row container */
-.text {
-	margin-left: 10px;
+/* Make h2 stand out within main */
+#main h2 {
+	font-variant: small-caps;
 }
 
 /* Index image */
@@ -162,7 +157,7 @@ button {
 	display: block;
 }
 
-/* linkImage is the image that links to different social platforms */
+/* linkImage is the image that links to different social platforms in resume.html. */
 .linkImage {
 	background-color:white; 
 	width:60%; 
@@ -171,7 +166,8 @@ button {
 	border: 1px solid #000000;
 }
 
-.bio {
+/* bio is the id of a span element in bio.html. */
+#bio {
 	font-size: 1.2em;
 	line-height: 1.3;
 }
@@ -181,10 +177,17 @@ button {
 
 
 /* Setting up the resume table */
-.resume {
+
+#myResume table, tr, td {
 	border: 1px solid black;
 	background-color: white;
 	margin-left: 10px;
+}
+
+
+
+.resume {
+	
 }
 
 
@@ -230,18 +233,18 @@ button {
 
 /* Adapt the layout at a screen width of 900 pixels */
 @media (max-width: 800px) {
-	.row {
+	#row {
 		flex-direction: column;
 		font-size: 0.8em;
 		margin-top: 170px;
 	}
 	
-	.navbar {
+	#navbar {
 		font-size: 0.8em;
 		top: 140px;
 	}
 	
-	.navbar a {
+	#navbar a {
 		padding: 14px 2vw;
 	}
 	
@@ -253,17 +256,17 @@ button {
 		border: 1px solid #000000;
 	}
 	
-	.header {
+	#header {
 		height: 80px;
 		background-position: 2%, 98%, center;
 		background-size: auto 80%, auto 80%, cover;
 	}
 	
-	.header h1 {
+	#header h1 {
 		text-shadow: 3px 3px 5px black;
 		font-weight: bold;
 		font-variant: small-caps;
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	
 	.bioImage {
