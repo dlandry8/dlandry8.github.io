@@ -2,132 +2,127 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+	<head>
+		<meta charset="UTF-8">
+		<!-- Establish external data -->
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="images.css">
+		<script src="script.js"></script>
 
-<head>
-<meta charset="UTF-8">
-<!-- Establish external data -->
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="images.css">
-<script src="script.js"></script>
+		<!-- Other head properties -->
+		<title>About David Landry</title>
+		<link rel="icon" href="circuit.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="David Landry">
+	</head>
 
-<!-- Other head properties -->
-<title>About David Landry</title>
-<link rel="icon" href="circuit.png">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="David Landry">
-</head>
+	<body>
+		<!-- Header -->
+		<div id="header">
+			<h1>Landarian Labs</h1>
+		</div>
 
+		<!-- Navbar -->
+		<div id="navbar">
+			<a href="index.html">Home</a><a href="resume.html">Resume</a><a href="blog.html">Blog</a><a href="portfolio/index.html">Portfolio</a><a href="interactive/index.html">Interactive Stuff</a><a href="contact.html">Contact us</a>
+		</div>
 
-<body>
-<!-- Header -->
-<div id="header">
-<h1>Landarian Labs</h1>
-</div>
+		<!-- Main body -->
+		<div id="row">
+			<!-- Side bar -->
+			<div id="side">
+				<h3><a href="landarian.html">Landarian Labs</a></h3>
+				<p >More information about the history and purpose of Landarian Labs.</p>
+				<hr>
+				<h3 ><a href="bio.html">David Landry's Bio</a></h3>
+				<p >Learn some facts about the life of David Landry.</p>
+				<hr>
+				<h3 ><a href="zebra.html">Why zebras?</a></h3>
+				<p >Why are there so many zebras?</p>
+			</div>
+				
+			<!-- Main content -->
+			<div id="main">
+				<h2 >David Landry's Bio</h2>
+				<p >Here are some interesting facts about David. Do you have any questions to contribute? Contact David to have your question answered!</p>
+				<span id="bio">
+					<table>
+					<tr>
+					<td rowspan="2000">
+					<!-- Easthampton -->
+					<img class="bioImage" src="easthampton.jpg" alt="Welcome sign for Easthampton, MA." onclick="createModal(this.src, this.alt)"><br />
 
+					<!-- Tree -->
+					<img class="bioImage" src="tree.jpg" alt="Around my neighborhood" onclick="createModal(this.src, this.alt)"><br />
+					<img class="bioImage" src="uwb.jpg" alt="At the University of Washington, Bothell" onclick="createModal(this.src, this.alt)"><br />
+					<img class="bioImage" src="generations.jpg" alt="Four generations" onclick="createModal(this.src, this.alt)"><br />
+					<img class="bioImage" src="mom.jpg" alt="Mom" onclick="createModal(this.src, this.alt)"><br />
+					<img class="bioImage" src="dad.jpg" alt="Dad" onclick="createModal(this.src, this.alt)"><br />
+					<img class="bioImage" src="tet.jpg" alt="Lunar New Year with friends" onclick="createModal(this.src, this.alt)"><br />
+					
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
 
-<!-- Navbar -->
-<div id="navbar">
-<a href="index.html">Home</a><a href="resume.html">Resume</a><a href="blog.html">Blog</a><a href="portfolio/index.html">Portfolio</a><a href="interactive/index.html">Interactive Stuff</a><a href="contact.html">Contact us</a>
-</div>
+						<!-- The Close Button -->
+						<span class="close">&times;</span>
 
+						<!-- Modal Content (The Image) -->
+						<img class="modal-content" id="img01">
 
-<!-- Main body -->
-<div id="row">
-	<!-- Side bar -->
-	<div id="side">
-	<h3><a href="landarian.html">Landarian Labs</a></h3>
-	<p >More information about the history and purpose of Landarian Labs.</p>
-    <hr>
-	<h3 ><a href="bio.html">David Landry's Bio</a></h3>
-	<p >Learn some facts about the life of David Landry.</p>
-    <hr>
-	<h3 ><a href="zebra.html">Why zebras?</a></h3>
-	<p >Why are there so many zebras?</p>
-	</div>
-	
-	
-	
-	<!-- Main content -->
-	<div id="main">
-	<h2 >David Landry's Bio</h2>
-	<p >Here are some interesting facts about David. Do you have any questions to contribute? Contact David to have your question answered!</p>
-	<span id="bio">
-	<table>
-	<tr>
-	<td rowspan="2000">
-	<!-- Easthampton -->
-    <img class="bioImage" src="easthampton.jpg" alt="Welcome sign for Easthampton, MA." onclick="createModal(this.src, this.alt)"><br />
+						<!-- Modal Caption (Image Text) -->
+						<div id="caption"></div>
+					</div>
+					
+					</td>
+					<td style="text-align:right"><b>
+					Name:
+					</b></td><td>
+					David Landry
+					</td></tr>
+					
+					<tr>
+					<td style="text-align:right"><b>
+					Hometown:
+					</b></td><td>
+					Easthampton, MA
+					</td></tr>
+					<tr>
+					<td style="text-align:right"><b>
+					Current Residence:
+					</b></td><td>
+					Lynnwood, WA
+					</td></tr>
+					
+					<tr>
+					<td style="text-align:right"><b>
+					Favorite music:
+					</b></td><td>
+					I have a wide, eclectic taste in music. I enjoy classical music, especially J.S. Bach. I also enjoy pop rock music from the 70's and 80's, with some of my favorites 
+					including Elton John, Billy Joel, Phil Collins, Genesis, America, and the Doobie Brothers. Lately, I've been getting into some forms of metal music with some 
+					favorites being Fozzy, Eluveitie, Wind Rose, Antti Martikainen, and Apocalypse Orchestra. I also enjoy some folk music (Patty Gurdy and Lindsey Stirling are two of my new favorites!) 
+					and some Christian gospel music too, with Robin Mark being a favorite.
+					</td></tr>
+					
+					<tr>
+					<td style="text-align:right"><b>
+					Favorite food:
+					</b></td><td>
+					I enjoy experiencing other cultures through food! I don't necessarily have a favorite, but I enjoy exploring new foods from other cultures. Lately, I've been enjoying exploring 
+					Asian cuisine. My favorite go-to junk foods include pizza and cookies. When cooking, I like to prepare stews and casseroles.
+					</td></tr>
 
-    <!-- Tree -->
-	<img class="bioImage" src="tree.jpg" alt="Around my neighborhood" onclick="createModal(this.src, this.alt)"><br />
-	<img class="bioImage" src="uwb.jpg" alt="At the University of Washington, Bothell" onclick="createModal(this.src, this.alt)"><br />
-	<img class="bioImage" src="generations.jpg" alt="Four generations" onclick="createModal(this.src, this.alt)"><br />
-	<img class="bioImage" src="mom.jpg" alt="Mom" onclick="createModal(this.src, this.alt)"><br />
-	<img class="bioImage" src="dad.jpg" alt="Dad" onclick="createModal(this.src, this.alt)"><br />
-    <img class="bioImage" src="tet.jpg" alt="Lunar New Year with friends" onclick="createModal(this.src, this.alt)"><br />
-	
-	<!-- The Modal -->
-    <div id="myModal" class="modal">
+					</table>
+				</span>
+			</div>
+			
+			
+			<!-- Footer -->
+			<div id="footer">
+			<p><center>Copyright 2020, Landarian Labs. All rights reserved.</center></p>
+			</div>
+		</div>
 
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
+	</body>
+	<script src="images.js"></script>
 
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
-    </div>
-	
-	</td>
-	<td style="text-align:right"><b>
-	Name:
-	</b></td><td>
-	David Landry
-	</td></tr>
-	
-	<tr>
-	<td style="text-align:right"><b>
-	Hometown:
-	</b></td><td>
-	Easthampton, MA
-	</td></tr>
-	<tr>
-	<td style="text-align:right"><b>
-	Current Residence:
-	</b></td><td>
-	Lynnwood, WA
-	</td></tr>
-	
-	<tr>
-	<td style="text-align:right"><b>
-	Favorite music:
-	</b></td><td>
-	I have a wide, eclectic taste in music. I enjoy classical music, especially J.S. Bach. I also enjoy pop rock music from the 70's and 80's, with some of my favorites 
-	including Elton John, Billy Joel, Phil Collins, Genesis, America, and the Doobie Brothers. Lately, I've been getting into some forms of metal music with some 
-	favorites being Fozzy, Eluveitie, Wind Rose, Antti Martikainen, and Apocalypse Orchestra. I also enjoy some folk music (Patty Gurdy and Lindsey Stirling are two of my new favorites!) 
-	and some Christian gospel music too, with Robin Mark being a favorite.
-	</td></tr>
-	
-	<tr>
-	<td style="text-align:right"><b>
-	Favorite food:
-    </b></td><td>
-	I enjoy experiencing other cultures through food! I don't necessarily have a favorite, but I enjoy exploring new foods from other cultures. Lately, I've been enjoying exploring 
-	Asian cuisine. My favorite go-to junk foods include pizza and cookies. When cooking, I like to prepare stews and casseroles.
-    </td></tr>
-
-	</table>
-	</span>
-	</div>
-	
-	
-	<!-- Footer -->
-	<div id="footer">
-	<p><center>Copyright 2020, Landarian Labs. All rights reserved.</center></p>
-	</div>
-</div>
-
-</body>
-<script src="images.js"></script>
 </html>
