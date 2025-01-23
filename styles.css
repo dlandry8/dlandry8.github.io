@@ -23,7 +23,7 @@ button {
 	padding: 30px 0px 30px 0px;
 	text-align: center;
 	background-color: rgb(0, 150, 150);
-	background-image: url(zebra2.png), url(zebra.png), url(circuit.jpg);
+	background-image: url(daisy_flower.png), url(bumblebee.png), url(circuit.jpg);
 	background-position: 2%, 98%, right;
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-size: auto 80%, auto 80%, cover;
